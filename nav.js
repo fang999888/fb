@@ -38,3 +38,6 @@ lucide.createIcons();
 }
 
 document.addEventListener("DOMContentLoaded",loadLayout);
+const footer = await fetch("footer.html");
+const footerHTML = await footer.text();
+document.getElementById("footer-placeholder").innerHTML = footerHTML;
